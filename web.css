@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    background-color: white;
+    z-index: 1000;
+}
+.logo{
+    margin-left: 200px;
+}
+.menus{
+    margin-left: 200px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+.menus > p:hover{
+    font-weight: 600;
+    transform: scale(1.02);
+}
+.icon{
+    font-size: 20px;
+    display: flex;
+    gap: 2em;
+    margin-top: 30px;
+    margin-left: 250px;    
+}
+.icon > i:hover{
+    font-size: 30px;
+}
+.hero{
+    display: grid;
+    margin: 10em 0 10em 0;
+    max-width: 1600px;
+    height: 700px;
+    background-image: url(https://img.freepik.com/free-photo/happy-woman-holding-her-shopping-bags_329181-9175.jpg?semt=ais_hybrid&w=740);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    justify-content: start;
+    align-items: center;
+}
+button{
+    width: 250px;
+    height: 70px;
+    background-color: white;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.description{
+    margin: 200px;
+}
+.description > p{
+    font-size: 35px;
+    font-weight: 200;
+    font-style: italic;
+}
+.description > h2{
+    font-size: 70px;
+}
+.pro > p{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+}
+.dress{
+    height: 100vh;
+    margin-top: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7,1fr);
+}
+.heading{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+.second_word{
+    color: lightgray;
+}
+.product_details{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 100%;
+    height: 130vh;
+    gap: 3em;
+}
+
+.products_description{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.product_image{
+    position: absolute;
+    height: 430px;
+    width: 290px;
+    margin-left: 120px;
+}
+.product_image > img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all 0.5s ease;
+}
+.product_image > img:hover{
+    transform: scale(0.9);
+}
+
+.product_left_icons{
+    position: absolute;
+    width: 50%;
+    margin-top: 430px;
+    margin-left: 120px;
+    color: goldenrod;
+    font-size: 1.5em;
+}
+.product_left_icons > .price{
+    color: black;
+}
+.product_right_icons{
+    position: absolute;
+    color: lightskyblue;
+    font-size: 1.5em;
+    margin-left: 380px;
+    margin-top: 430px;
+}
+footer{
+    margin-top: 100px;
+    display: grid;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    text-align: center;
+}
+.foot{
+    font-size: 20px;
+    margin-top:15px ;
+}

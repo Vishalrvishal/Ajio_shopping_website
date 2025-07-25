@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJIO Shopping</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="data:image/png;base64,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">
+        </div>
+        <div class="menus">
+            <p>Home</p>
+            <p>Shop</p>
+            <p>Products</p>
+            <p>Page</p>
+            <p>Docs</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+    <section class="hero" id="id">
+        <div class="description">
+            <p>Winter collection</p>
+            <h2>New winter <br> Collection 2025</h2>
+            <p>There's Nothing like Trend</p>
+            <button style="margin-top: 10px;"> Shop Now <i class="fa-solid fa-arrow-right"></i></i></button>
+        </div>
+    </section>
+    <section class="mens_cloths">
+        <div class="heading">
+            <p>Men's <span class="second_word">Clothing</span></p>
+        </div>
+        <div class="product_details">
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-chloekalaartist-1.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-marleneleppanen-2.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-mostafasanadd-3.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-prayoon-sajeev-4.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-prayoon-sajeev-5.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-yogendras31-6.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+        <div class="heading">
+            <p>Women's <span class="second_word">Clothing</span></p>
+        </div>
+                <div class="product_details">
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-khalidgarcia-7.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-sachinbhartiphotography-8.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-kowalievska-9.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-playmakerjoy-10.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-11.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+            <div class="product_description">
+                <div class="product_image">
+                    <img src="pexels-pixabay-12.jpg">
+                </div>
+                <div class="product_left_icons">
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <div class="price">
+                        $23.99
+                    </div>
+                </div>
+                <div class="product_right_icons">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="foot">Copyright © 2012 - 2025 AJIO®. All rights reserved.</p>
+    </footer>
+</body>
+</html>
